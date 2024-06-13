@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+/*navbar*/
+nav {
+  background: #fff;
+}
+.nav-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.3rem;
+  padding: 0 10px;
+}
+.nav-item h4 {
+  color: #70b2cf;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 8px;
+}
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  letter-spacing: 2px;
+}
+.nav-links li {
+  list-style-type: none;
+}
+.nav-link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, .65);
+  position: relative;
+}
+/*nav-links:hover*/
+.nav-link:hover,
+.nav-link:focus {
+  color: rgba(0, 0, 0, 1);
+  transition: all .4s;
+}
+/*underline ig hover*/
+.nav-link::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background: rgb(0, 0, 0, 1);
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  transition: all 0.2s;
+  opacity: 0;
+  pointer-events: none;
+}
+.nav-link:hover::after {
+  opacity: 1;
+}
+.active {
+  color: #70b2cf;
+  font-weight: 700;
+}
+
+/*main content*/
+main {
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+}
+.container {
+  text-align: center;
+  font-size: 1.8rem;
+  
+  font-family: Poppins, sans-serif;
+}
+.container h2 {
+  border-radius: 8px;
+  background: rgb(24, 24, 24);
+  padding: 20px;
+  color: #fff;
+  letter-spacing: 4px;
+}
+.btn {
+  letter-spacing: 2px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid #000;
+  background: rgba(255, 255, 255, 0.1);
+}
+.btn:hover {
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  transition: all .2s ease;
+}
+.color {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #70b2cf;
+}
